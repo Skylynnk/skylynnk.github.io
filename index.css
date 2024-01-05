@@ -27,6 +27,11 @@ body{
     font-family: Helvetica;
    
 }
+/* not linked!!!!!!!!!!!! */
+#pfp {
+    float: right;
+    margin-left: 50px;
+}
 
 #bio {
     text-align: left;

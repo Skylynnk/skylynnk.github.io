@@ -55,3 +55,9 @@ a{
     color: #B80F0A;
     font-size: 20px;
 }
+
+#tictactoe{
+    font-family: Arial; 
+    font-weight: bold; 
+    text-align: left; 
+}
