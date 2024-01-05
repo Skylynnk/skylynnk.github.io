@@ -1,0 +1,63 @@
+/*anchor tagged navbar*/
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* nabar list floating */
+.navbar li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/*Color of entire body background*/
+body{
+    background-color: #778DA9;
+}
+
+
+/* nabar list specs */
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: #415A77;
+    background-size: cover;
+    /* possible color combo 778DA9 */
+    font-family: Helvetica;
+    color: white;
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#blackjack {
+    width: 35%;
+    height: 35%;
+}
+
+#bj {
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 12%;
+
+}
+
+a{
+    font-weight: bold; 
+    color: #B80F0A;
+    font-size: 20px;
+}
+
+#tictactoe{
+    font-family: Arial; 
+    font-weight: bold; 
+    text-align: left; 
+}
