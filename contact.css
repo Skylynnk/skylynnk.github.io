@@ -12,7 +12,15 @@
     font-family: "playfair-display";
 }
 
+h2{
+      /* background-color: #738a63;  */
+      background-size: cover;
+      /* possible color combo 778DA9 */
+      font-family: "playfair-display";
+      color: #C0C0C0;
 
+      font-size: 32px;
+}
 
 
 /*anchor tagged navbar*/
