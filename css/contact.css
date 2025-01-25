@@ -1,0 +1,134 @@
+  /* Website name (anchor tag) */
+  .web-name {
+    font-size: 30px;
+    /* You can adjust the font size */
+    color: #C0C0C0;
+    text-decoration: none;
+    /* Remove underline */
+    white-space: nowrap;
+    /* Prevents the name from wrapping to the next line */
+    line-height: 1;
+    /* Ensure no extra vertical space between lines */
+    font-family: "playfair-display";
+}
+
+
+
+
+/*anchor tagged navbar*/
+.navbar {
+    text-align: right;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* Align navbar to the right */
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* nabar list floating */
+
+.navbar li {
+    margin-left: 20px;
+    /* Spacing between navbar items */
+}
+/* nabar list specs */
+.navbar a {
+    text-decoration: none;
+    color: #C0C0C0;
+    font-weight: 200;
+    font-family: "playfair-display", serif;
+    font-size: 20px;
+    vertical-align: middle;
+    /* Ensure items are vertically aligned */
+    text-align: right;
+}
+
+/* Optional: Hover effect for navbar links */
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+/*Color of entire body background*/
+body {
+    background-color: #161616;
+    /* } #C7CBB1 i like this color for polaorid gallery*/
+}
+
+h1 {
+    /*This is positioning "About Me" text*/
+      color: #C0C0C0;
+  font-family: "playfair-display", serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;  /* Move the title down */
+  margin-bottom: -400px;
+  margin-left: 320px;
+  display: inline-block;  /* Prevents margin from affecting layout globally */
+  position: relative; /* Keeps the title within its normal flow */
+  top: 70px;  /* Adjust this value to control the space above the title */
+
+}
+
+h2{
+/* possible color combo 778DA9 */
+    font-family: Helvetica;
+    color: white;
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.first{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.last{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.email
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.message{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* make form box larger */ 
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    margin: 5px;
+    white-space: nowrap;
+
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 20px;
+    margin: 5px;
+    font-weight: bold;
+
+}
+
+h3 {
+
+    font-family:Helvetica;
+    color: #B80F0A;
+}
