@@ -2,69 +2,215 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- made by Skylynn Cantor. Last edited on 1/2/2025
+Website protfolio that showcases my skills and experiences  -->
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkylynnCantor-Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/suy3uxj.css">
     <!-- href="./resources/css/index.css" -->
 </head>
 
-
-<!-- Link to internal(web) pages-->
-<!-- navbar -->
-<nav class="navbar">
-    <ul>
-        <li><a href="#aboutme"> About Me </a></li>
-              <!--fix resume firectory-->
-        <li><a href="./projects.html"> Projects </a></li>
-        <li><a href="./contact.html"> Contact Me </a></li>
-    </ul>    
-</nav>
+<header>
+    <div class="header-container">
+        <a href="#aboutme" class="web-name"> Skylynn Cantor </a>
+        <!-- Link to internal(web) pages-->
+        <!-- navbar -->
+        <!-- Header of the Website-->
 
 
-<!-- Header of the Website-->
-<h1> Skylynn Cantor </h1>
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="#aboutme"> About Me </a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <body>
+    <h1>About Me</h1>
+    <div class="about-container">
+        <div class="polaroid">
+            <div class="image-container">
+                <img src="resources/images/Senior1.jpg" width="200" height="215" alt="High School Graduation Photo" />
 
-    <h3 id="aboutme"> About Me </h3>
-    <img id=pfp src="/images/Senior1.jpg" width="300" height="450" alt="High School Graduation Photo"/> 
-    <!-- src="resources/images/Senior1.jpg" -->
-    <div id="bio">
-        <p> Hello, my name is Skylynn Cantor. I am a Computer Science major 
-            at UNLV, with an expected graduation date of Spring 2026. 
-            I am currently working on my CompTIA+ Security+ Certification. 
-            In the future I hope to pursue a career in Cybersecurity or Web Development. 
-            <!-- dont want to talk about the future talk about what I want to do and what I a, working on -->
-            <!-- information security analyst -->
-        </p>
-        
+
+
+                <!-- <h3 id="aboutme"> About Me </h3> -->
+                <!-- <img id=pfp src="resources/images/Senior1.jpg" width="300" height="450" alt="High School Graduation Photo" /> -->
+                <!-- src="resources/images/Senior1.jpg" -->
+                <!-- Include relevant courses ive taken and that i am self taught-->
+                <!-- include linked in links and email links at bottom-->
+                <!-- <div class="about-section"> -->
+
+            </div>
+        </div>
+
+        <div class="about-text">
+            <div class="text-content">
+
+                <p> Hello! <br>
+                    My name is Skylynn Cantor, and I’m currently a Computer Science major with a minor in Accounting at
+                    UNLV. I am actively exploring my options within the CS
+                    field. While I’m still
+                    discovering where I want to specialize, areas such as web development, cybersecurity, IT, and using
+                    technology in the medical
+                    field have particularly caught my attention. As a former nursing student, I’m excited about the
+                    potential to combine my tech skills
+                    with healthcare to improve patient care and outcomes.
+                    <!-- dont want to talk about the future talk about what I want to do and what I a, working on -->
+                    <!-- information security analyst -->
+                </p>
+            </div>
+        </div>
     </div>
-    <!-- Include relevant courses ive taken and that i am self taught-->
-    <!-- include linked in links and email links at bottom-->
-
-    <div >
-        <h3 id="resume"> Resume </h3>
-        <a href="./resources/images/Skylynn Cantor-Resume.docx.pdf"> <button id="resbutton"> Download Resume</button></a>
     </div>
 
-    <h3> Technical Skills</h3>
-    <p id="language">
-        <strong>Languages: <br> </strong>
-        Intermediate: C, C++ <br>
-        Familiar: HTML, css
+    <!-- relevant courses section -->
+    <div class="relevant-courses">
+        <h3>Revelant courses</h3>
+        <p>
+        <ul>
+            <li><strong>Computer Science I (C,C++ ) - </strong> Problem-solving methods and algorithm development in a
+                high-level programming language.
+                Program design, coding, debugging, and documentation using techniques of good programming style.</li>
+            </p>
+            <p>
+                <li><strong>Computer Science II (C,C++ ) - </strong>Data structures and algorithms for manipulating
+                    linked lists. String and file processing.
+                    Recursion, Software engineering, structured programming and testing, especially larger programs.
+                </li>
+            </p>
+            <p>
+                <li><strong>Data Structures(C,C++, Java) - </strong> Introduction to sequential and linked structures.
+                    File access including sequential, indexed sequential
+                    and other file organizations.Internal structures including stacks, queues, trees, and graphs.
+                    Algorithms for implementing and manipulating structured
+                    objects. Big-O-notation
+                </li>
+            </p>
+            <p>
+                <li><strong>Introduction to Computer Systems (Assembly x64) - </strong> Algorithms from systems
+                    programming including conversion, buffering, device drivers,
+                    assemblers and loaders. Use of system services, macros, and linkage conventions. </li>
+            </p>
+        </ul>
+    </div>
+    </div>
 
-        </ui>
-    </p>
-    <p >
+
+    </div>
+    <!-- Languages Section -->
+    <div class="languages">
+        <h3><strong>Languages</strong></h3>
+
+        <div class="language-category">
+
+            <ul class="language-list">
+                <li><img src="resources/images/C.svg.png" width="50" alt="C language logo"></li>
+                <li><img id="cpp-logo" src="resources/images/C++.png" width="125" alt="C++ language logo"></li>
+                <li><img id="css-logo" src="resources/images/CS.svg.png" width="45" alt="CSS language logo"></li>
+                <li><img src="resources/images/HTML.svg.png" width="45" alt="HTML logo"></li>
+                <li><img id="javascript" src="resources/images/JavaScript.png" width="65" alt="JavaScript logo"></li>
+                <li><img id="assembly" src="resources/images/ASM.png" width="65" alt="Assembly logo"></li>
+            </ul>
+        </div>
+    </div>
+
+   
+
+    <!-- Projects Section -->
+
+    <!-- <body> 
+            <div id="projects"> -->
+    <!--Insert Projects here-->
+
+    <!-- <a href="https://github.com/Skylynnk/BlackJack.git"> -->
+    <!-- <img id=blackjack src="Screenshot 2023-12-21 at 10.37.51 PM.png" alt="BlackJack Image"> </a> 
+src="resources/images/Screenshot 2023-12-21 at 10.37.51 PM.png"  -->
+
+    <div class="projects">
+
+        <h3 id="projects">Projects</h3>
+
+        <!-- Projects container to hold both sections side by side -->
+        <div class="projects-container">
+            <!-- Metal Detector Section -->
+            <div class="metalDetector">
+                <a href="https://docs.google.com/presentation/d/14KNiYQLfdx_luTauKW4FnALWLU7sjX2cFLQoTC8al3Q/edit?usp=sharing">
+                    <img id="metal-detector" src="resources/images/Untitled_Artwork.png" alt="Arduino Metal Detector">
+                </a>
+                <a href="https://docs.google.com/document/d/16AMUYYfWBrwCwymJbYHCJerfv-LL5aayqdDoryJ-bj8/edit?usp=sharing">
+                    <p>Arduino Metal Detector - C++</p>
+                
+            </div>
         
+            <!-- Lockbox Section -->
+            <div class="lockBox">
+                <a href="https://docs.google.com/presentation/d/1FnuWZqUjtvOw6yRQC5Eh614nKq8uRDkrM8_mE1pV3PY/edit?usp=drive_link">
+                    <img id="lockbox" src="resources/images/lockbox.png" alt="Arduino Hidden Book Safe">
+                </a>
+                <p>Arduino Hidden Book Safe - C++</p>
+            </div>
+        </a>
+        </div>
+
+        
+
+    <!-- <p id="bj">Black Jack - C++ </p> -->
+    <!--Insert Project pics here-->
+    
+ <div id="other-projects">
+<ul>
+ <p> Film Gallery - in progress </p>
+<p> Metabolism Calculator - in progress </p>   
+</ul>
+
+ </div>
+    
+    <!-- <a href="https://github.com/Skylynnk/TicTacToe.git">
+        <img src="TicTacToe.png" width="200" heigh="200" alt="TicTacToe example" /> </a> -->
+
+    <!-- <p id="tictactoe"></p> <strong>TicTacToe - C++</strong></p> -->
+     </div>
+</div> 
+
+<!-- Resume Section -->
+ <div class="resumes">
+    <h3 id="resume"> Resume </h3>
+        <a href="./resources/images/Skylynn Cantor-Resume.docx.pdf"> <button id="resbutton"> Download
+                Resume</button></a>
+            </div>
 </body>
-<!--Bottom of page-->
+
+
+<!-- Bottom of page -->
 <!--Learn CSS for formatting-->
 <br> <br> <br> <br>
-<p id="bottom"> <strong> Email: </strong> Skylynnk29@gmail.com |
-    <strong>LinkedIn:</strong> linkedin.com/in/skylynnc
+<a href="skylynnk29@gmail.com">
+    <p id="bottom"> <img id="mail" src="/resources/images/mail.png" width="25"> skylynnk29@gmail.com
+</a>
+<a href="linkedin.com/in/skylynnc"><img id="linkedin" src="/resources/images/linkedin.svg.png"
+        width="25">linkedin.com/in/skylynnc </a> 
 </p>
+
+
+<!--Projects Section-->
+<!-- <div>
+    <h1> Projects </h1> 
+        </div> -->
+<!--Insert Projects here-->
+
+<!-- Resume Section -->
+
+<!-- Contact Section -->
 
 </html>
