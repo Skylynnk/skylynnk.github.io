@@ -1,0 +1,589 @@
+/* :root {
+
+} */
+
+.header-container {
+    display: flex;
+    width: 100vw;
+    height: 120px;
+    flex: row;
+    align-items: center;
+    align-items: flex-start;
+}
+
+header {
+
+    font-weight: bold;
+    color: white;
+    /* background: yellow; */
+}
+
+.web-name {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 20px;
+    color: white;
+    align-self: baseline;
+    
+    overflow: hidden;
+    border-right: 2px solid #319BC9;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    line-height: 1.2; 
+    animation: 
+    typing 3.0s steps(15, end) forwards, /* ADD forwards here */
+    blink-caret .75s step-end infinite;
+}
+
+  
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 9.5em; } /* Much more generous width */
+}
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #319BC9; }
+  }
+
+
+/* Main Navigation Bar (Top Left) */
+/* Entire Nav Bar */
+.mainNavBar {
+
+    /* padding-right: 30px; */
+
+    text-align: right;
+    width: 100%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+}
+
+.mainNavBar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    height: 50px;
+    padding-right: 20px;
+    padding: 0;
+    /* background: red; */
+}
+
+/* Nav Bar Words */
+.mainNavBar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    vertical-align: middle;
+
+}
+
+.mainNavBar a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Body Section */
+
+
+body {
+    background-color: #161616;
+    padding: 0;
+    margin: 0;
+
+}
+
+#about-container {
+    
+    margin-top: 0px;
+    padding-top: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+    
+    align-items: center; /* Add this to center vertically */
+    min-height: 70vh; /* Add this to center on screen */
+    max-width: 1200px; /* Add this to limit total width */
+    margin: 0 auto; /* Add this to center the container */
+    padding: 20px; 
+    /* flex-direction: column; */
+
+
+}
+
+/* Polaorid  */
+.polaroid {
+    display: inline-block;
+    background-color: #fff;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(200, 200, 200, 0.3);
+    margin: 20px;
+    border-radius: 0;
+    width: 200px;
+    height: 260px;
+    flex-shrink: 0;
+
+    position: relative;
+    
+
+
+}
+
+.polaroid-image img {
+    width: 100%;
+      /* Make the image take full width */
+      height: auto;
+      /* Maintain aspect ratio */
+      display: block;
+      border-radius: 4px;
+}
+
+/* About Me Section */
+#about-text {
+    color: white;
+    flex: 1; /* Changed from flex: 2 */
+    margin: 20px; /* Simplified margin */
+    max-width: 700px; /* Add max-width instead of fixed width */
+    position: relative;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+#about-text h1 {
+    /* background-color: orange; */
+    display: flex;
+    
+    margin-top: 20px;
+    
+    color: #319BC9;
+
+}
+
+#about-text p {
+    width: 100%; /* Changed from fixed 500px */
+    max-width: 500px; /* Add max-width instead */
+    height: auto;
+    line-height: 1.6; 
+    
+}
+
+.social-icons {
+    padding: 10px 0; /* Simplified padding */
+    display: flex;
+    gap: 20px;
+    
+    /* Keep absolute positioning */
+    /* bottom: 140px; Position at bottom of text container */
+    /* right: 420px;  Position at right edge of text container */
+    
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    
+}
+  /*Make it so that when you hover over the logo it shows a backdrop*/
+  a > #evoq-logo,
+  a > #wrebotics-logo {
+     /* Smooth transition effect for hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
+       /* Slight rounding of the corners */
+    border-radius: 8px;
+    /* Add a little space inside the image to give room for hover background */
+    padding: 5px;
+}
+a:hover > #linkedin-logo,
+a:hover > #handshake-logo {
+ 
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover backdrop */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
+    /* Change the cursor to a pointer to indicate it's clickable */
+    cursor: pointer;
+}
+
+#moreNavBar-container{
+    /* background-color: red; */
+    display: flex; 
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-top: 10vh; 
+    margin-bottom: 10vh; 
+    min-height: 20vh;
+
+}
+
+.moreNavBar ul{
+    display: flex; 
+    justify-content: center; /* Add this back */
+    list-style: none;
+    padding: 0; 
+    gap: 20px; 
+  
+    height: auto;
+    width: auto; 
+    margin: 0; /* Remove margin-bottom: 120px; */
+    color: white;
+    align-items: center; /* Add this back */
+}
+
+.moreNavBar ul li a {
+    font-size: 22px;
+    
+    text-decoration: none;
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; /* Fixed: was 0.3, should be 0.3s */
+    color: white; 
+}
+
+.moreNavBar ul li a:hover {
+    background-color: #205a7983;
+    /* opacity: 50%; */
+    color: white; 
+}
+
+.moreNavBar ul li a.active {
+    background-color: #333;
+    color: white; 
+}
+
+/* Experience Section */
+/*Timeline stuff*/
+.portfolio-timeline * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+.portfolio-timeline {
+    font-family: Arial, sans-serif;
+    background: #161616;
+    padding: 50px 20px;
+    color: #333;
+}
+
+.portfolio-timeline-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: 350px 1fr; */
+    gap: 40px;
+    /* align-items: start; */
+}
+
+.portfolio-timeline-title {
+    text-align: center; 
+ margin-bottom: 40px; 
+ color: #319BC9; 
+    font-size: 2rem;
+    
+}
+
+.portfolio-timeline-wrapper {
+    position: relative;
+    padding-left: 30px;
+    padding: 30px;
+    max-width: 1000px;  
+   
+}
+
+.portfolio-timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #3498db;
+}
+
+.portfolio-timeline-item {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.portfolio-timeline-dot {
+    position: absolute;
+    left: -24px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background: #3498db;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #3498db;
+}
+
+.portfolio-position-header {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.portfolio-position-header:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.portfolio-position-header.portfolio-active {
+    background: #376375;
+}
+
+.portfolio-job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white; 
+}
+
+.portfolio-company {
+    color: #7f8c8d;
+    margin-bottom: 3px;
+}
+
+.portfolio-period {
+    font-size: 14px;
+    color: #95a5a6;
+}
+
+.portfolio-position-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #eee;
+    margin-top: -8px;
+    border-radius: 0 0 8px 8px;
+}
+
+.portfolio-position-details.portfolio-expanded {
+    max-height: 1000px;
+}
+
+.portfolio-details-content {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.portfolio-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.portfolio-image-slider {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.portfolio-slider-image {
+    width: 100%; 
+    height: 300px;
+    object-fit: contain;
+    display: none;
+}
+
+.portfolio-slider-image.portfolio-slider-active {
+    display: block;
+}
+
+.portfolio-slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.portfolio-slider-nav:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+.portfolio-slider-prev { left: 10px; }
+.portfolio-slider-next { right: 10px; }
+
+.portfolio-slider-dots {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.05);
+}
+
+.portfolio-slider-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #bdc3c7;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.portfolio-slider-dot.portfolio-dot-active {
+    background: #3498db;
+}
+
+.portfolio-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.portfolio-skill {
+    background: #3498db;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .portfolio-timeline-container {
+        padding: 0 10px;
+    }
+    
+    .portfolio-position-header {
+        padding: 15px;
+    }
+}
+#evoq-logo{
+    width: 60px; 
+    height: auto; 
+}
+#wrebotics-logo {
+    width: 60px; 
+    height: auto; 
+}
+
+#under-progress {
+color: white; 
+text-align: center;
+padding-top: 300px;
+}
+
+/*Relevant Skills etc*/
+#courses-container {
+    display: flex; 
+    color: white; 
+    
+  
+
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    font-family: fira code;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 1px;
+    border: 0.5px solid #333; /* Sets a 2px solid black border */
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: grey;
+    width: 57.5%;
+    display: none;
+    overflow: hidden;
+  }
+
+
+/* Skills Section */
+
+#skill-container {
+    color: white; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+
+#projects-container {
+ color: white; 
+ text-align: center; 
+}
+
+#resume-container {
+    color: white; 
+    text-align: center; 
+   }
+
+
+
+.contactMe-container {
+    /* background-color: red; */
+    margin-top: 30px; 
+    padding: 50px; 
+    font-size: 20px; 
+    margin: 90px; 
+    color: white; 
+    border-radius: 10px;
+    border: 2px solid #333; /* Sets a 2px solid black border */
+    
+    
+}
+
+/*make a border around the contact box*/
+
+.contactMe-container h1{
+    text-align: center;
+    padding: 0px; 
+    color: #319BC9;  
+    
+}
+
+footer {
+    color: white; 
+    display: flex;
+    flex-direction: row;
+    gap: 40px; 
+    padding: 5px 10px; 
+}
